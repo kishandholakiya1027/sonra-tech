@@ -1,0 +1,134 @@
+@import '~bootstrap/scss/bootstrap';
+$color_1: #2c689c;
+$color_2: #fff;
+$color_3: white;
+$background-color_1: #c2c2c2;
+$background-color_2: #e0e0e0;
+$border-color_1: #fcdcdc;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pagination {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 30px;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  li {
+    display: inline-block;
+    padding-left: 0;
+    list-style: none;
+    border: 0;
+
+    a {
+      position: relative;
+      float: left;
+      padding: 6px 12px;
+      line-height: 1.42857143;
+      text-decoration: none;
+      color: $color_1;
+      background-color: $background-color_2;
+      margin-left: -1px;
+
+      &:hover {
+        background-color: $background-color_2;
+        color: $color_3;
+      }
+    }
+
+    span {
+      position: relative;
+      float: left;
+      padding: 6px 12px;
+      line-height: 1.42857143;
+      text-decoration: none;
+      color: $color_1;
+      background-color: $background-color_2;
+      margin-left: -1px;
+    }
+
+    &:first-child {
+      a {
+        margin-left: 0;
+        padding: 0px;
+        border-bottom-left-radius: 4px;
+        border-top-left-radius: 4px;
+        display: none !important;
+      }
+
+      span {
+        margin-left: 0;
+        padding: 0px;
+        border-bottom-left-radius: 4px;
+        border-top-left-radius: 4px;
+        display: none !important;
+      }
+    }
+
+    &:last-child {
+      a {
+        border-bottom-right-radius: 4px;
+        margin-right: 0;
+        padding: 0px !important;
+        border-top-right-radius: 4px;
+        display: none !important;
+      }
+
+      span {
+        border-bottom-right-radius: 4px;
+        margin-right: 0;
+        padding: 0px !important;
+        border-top-right-radius: 4px;
+        display: none !important;
+      }
+    }
+  }
+
+  li.active {
+    a {
+      color: $color_1;
+      background-color: $background-color_1;
+    }
+  }
+}
