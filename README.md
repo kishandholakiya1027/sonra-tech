@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 ### Install Node Modules
 
 use 18.16.1\
